@@ -15,11 +15,11 @@ class Grandma
       'WHAT?!'
     elsif @string.upcase != @string
       'SPEAK UP, KID!'
-    elsif @string.upcase == @string && @string != 'GOODBYE!'
-      'NO, NOT SINCE 1946!'
     elsif @string == 'GOODBYE!'
       @@count += 1
       @@count > 1 ? 'LATER, SKATER!' : 'LEAVING SO SOON?'
+    elsif @string.upcase == @string
+      'NO, NOT SINCE 1946!'
     end
   end
 end
